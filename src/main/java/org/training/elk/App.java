@@ -69,6 +69,7 @@ e.printStackTrace();
         jsonMap.put("postDate", new Date());
         jsonMap.put("message", "trying out Elasticsearch");
         IndexRequest indexRequest = new IndexRequest("myindex").id("1").source(jsonMap);
+        //--- Test Jenkins
 
         IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
     }
